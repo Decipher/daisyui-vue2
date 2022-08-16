@@ -7,4 +7,4 @@ set -eu -o pipefail
 NUXT_DIR="${GITPOD_REPO_ROOT}/examples/nuxt"
 
 # Set up Nuxt
-cd "$DRUXT_DIR" && yarn
+cd "$NUXT_DIR" && yarn
