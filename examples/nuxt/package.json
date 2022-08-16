@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "druxt": "latest",
-    "druxt-module-template": "link:../..",
+    "daisyui-vue2": "link:../..",
     "nuxt": "latest"
   }
 }
