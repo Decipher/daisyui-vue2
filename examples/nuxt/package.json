@@ -1,12 +1,16 @@
 {
-  "name": "druxt-module-template-example",
+  "name": "example-daisyui-vue2-nuxt",
   "version": "0.0.0",
   "scripts": {
-    "dev": "nuxt dev"
+    "dev": "nuxt dev",
+    "storybook": "nuxt storybook"
   },
   "dependencies": {
-    "druxt": "latest",
-    "daisyui-vue2": "link:../..",
+    "@nuxt/postcss8": "latest",
+    "@nuxtjs/storybook": "latest",
+    "@nuxtjs/tailwindcss": "latest",
+    "daisyui": "^1",
+    "daisyui-vue2": "../..",
     "nuxt": "latest"
   }
 }

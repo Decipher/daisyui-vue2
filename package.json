@@ -1,27 +1,23 @@
 {
-  "name": "druxt-module-template",
+  "name": "daisyui-vue2",
   "version": "0.0.0",
   "keywords": [
-    "druxt",
-    "module"
+    "daisyui",
+    "vue2"
   ],
   "exports": {
-    ".": {
-      "require": "./dist/index.ssr.js",
-      "import": "./dist/index.esm.js"
-    },
+    "./nuxt/*": "./dist/nuxt.js",
     "./components/*": "./dist/components/*"
   },
-  "main": "dist/index.ssr.js",
-  "module": "dist/index.esm.js",
   "files": [
     "dist",
-    "templates"
+    "lib"
   ],
   "scripts": {
     "build": "siroc build",
     "build:watch": "siroc build --watch",
     "changeset": "changeset",
+    "example:nuxt": "cd examples/nuxt && yarn dev",
     "lint": "eslint --ext .js,.vue src",
     "test": "jest",
     "test:watch": "jest --watch"

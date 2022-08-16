@@ -4,7 +4,15 @@ import { join } from 'path'
 const NuxtModule = function (moduleOptions = {}) {
   // Register components directories.
   this.nuxt.hook('components:dirs', dirs => {
-    dirs.push({ path: join(__dirname, 'components') })
+    dirs.push({
+      path: join(__dirname, 'components'),
+      prefix: 'dui'
+    })
+  })
+
+  // Nuxt Storybook.
+  this.nuxt.hook('storybook:config', async ({ stories }) => {
+    stories.push(join(__dirname, 'components/**/stories.mjs'))
   })
 }
 
